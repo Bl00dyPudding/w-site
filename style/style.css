@@ -343,4 +343,19 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1920px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-image: url("../style_images/bg_header.jpg");
+  background-repeat: no-repeat;
+  max-height: 1024px;
+}
+
 /*# sourceMappingURL=style.css.map */
