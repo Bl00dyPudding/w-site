@@ -337,6 +337,24 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat/Montserrat-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Montserrat/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Light.otf") format("opentype"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Regular.otf") format("opentype"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
@@ -356,6 +374,41 @@ header {
   background-image: url("../style_images/bg_header.jpg");
   background-repeat: no-repeat;
   max-height: 1024px;
+}
+
+.footer {
+  width: 100%;
+}
+.footer__content {
+  background: #191919;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.footer__content__about-the-project {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__content__about-the-project img {
+  width: 195px;
+}
+.footer__content__about-the-project span {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  margin-top: 17px;
+}
+
+.footer__content__about-the-project__link {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  line-height: 17px;
+  color: #D1D1D1;
+}
+.footer__content__about-the-project__link::before {
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */
