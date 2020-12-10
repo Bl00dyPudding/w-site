@@ -32,7 +32,12 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1920px;
+  max-width: 1920px;
+}
+
+a {
+  text-decoration: none;
+  outline:none;
 }
 
 *,
@@ -42,14 +47,9 @@ body {
   transition: .3s;
 }
 
-a {
-  text-decoration: none;
-  outline:none;
-}
-
 button,
 button:hover,
-button:active{
+button:active {
   padding: 0 0 0 0;
   outline: none;
 }

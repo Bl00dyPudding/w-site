@@ -363,7 +363,12 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1920px;
+  max-width: 1920px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
 }
 
 *,
@@ -371,11 +376,6 @@ body {
 ::after,
 :active {
   transition: 0.3s;
-}
-
-a {
-  text-decoration: none;
-  outline: none;
 }
 
 button,
@@ -427,20 +427,25 @@ header {
 }
 
 .main_partners {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  min-height: 489px;
   background-image: url("../style_images/bg_partners.png");
   background-size: cover;
-  padding: 140px 405px 140px 405px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main_partners__link:hover .partner-img {
+.main_partners__link:hover {
   transform: scale(1.1);
 }
 
+.main_partners__partner-img {
+  padding: 0 75px 0 75px;
+}
+
 .main_partners__link:active {
-  opacity: 0.67;
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=style.css.map */
