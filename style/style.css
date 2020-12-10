@@ -428,7 +428,7 @@ header {
 
 .main_partners {
   width: 100%;
-  min-height: 489px;
+  max-height: 489px;
   background-image: url("../style_images/bg_partners.png");
   background-size: cover;
   display: flex;
@@ -446,6 +446,20 @@ header {
 
 .main_partners__link:active {
   opacity: 0.75;
+}
+
+.main_realization {
+  margin: 0 auto;
+  background-color: #FBFAF8;
+}
+
+.main_realization_img {
+  background-image: url("../style_images/realization.svg");
+  height: 483px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */
