@@ -1,0 +1,80 @@
+.main_realization {
+  padding: 60px 144px 0 144px;
+  background-color: #FBFAF8;
+}
+
+.main_realization_header {
+  padding: 20px 368px;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  color: #555555;
+}
+
+.main_realization_description {
+  font-family: Montserrat;
+  max-width: 770px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 0 231px;
+}
+
+.main_realization_img {
+  padding-top: 42px;
+  max-width: 1232px;
+}
+
+.main_realization_footer {
+  display: flex;
+  background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+  padding: 45px 145px;
+}
+
+.main_realization_footer_waxom {
+  font-family: Raleway;
+  font-size: 28px;
+  line-height: 33px;
+  color: #C7B299;
+  padding-right: 5px;
+}
+
+.main_realization_footer_description {
+  font-family: Raleway;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+.main_realization_footer_wrap_wrap {
+  display:flex;
+}
+
+.main_realization_footer_wrap {
+  margin-right: 536px;
+}
+
+.main_realization_footer_text {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #615855;
+}
+
+.main_realization_footer_button {
+  padding: 18px 32px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #988574;
+  border-radius: 3px;
+  color: #FFFFFF;
+}
