@@ -35,6 +35,21 @@ body {
   width: 1920px;
 }
 
+*,
+::before,
+::after,
+:active{
+  transition: .3s;
+}
+
 a {
   text-decoration: none;
+  outline:none;
+}
+
+button,
+button:hover,
+button:active{
+  padding: 0 0 0 0;
+  outline: none;
 }

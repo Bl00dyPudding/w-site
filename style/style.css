@@ -366,8 +366,23 @@ body {
   width: 1920px;
 }
 
+*,
+::before,
+::after,
+:active {
+  transition: 0.3s;
+}
+
 a {
   text-decoration: none;
+  outline: none;
+}
+
+button,
+button:hover,
+button:active {
+  padding: 0 0 0 0;
+  outline: none;
 }
 
 header {
@@ -412,15 +427,20 @@ header {
 }
 
 .main_partners {
-  width: 1920px;
-  max-height: 489px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-image: url("../style_images/bg_partners.png");
-  background-repeat: no-repeat;
   background-size: cover;
+  padding: 140px 405px 140px 405px;
 }
 
-.main_partners__icons {
-  transform: scale(0.5);
+.main_partners__link:hover .partner-img {
+  transform: scale(1.1);
+}
+
+.main_partners__link:active {
+  opacity: 0.67;
 }
 
 /*# sourceMappingURL=style.css.map */
