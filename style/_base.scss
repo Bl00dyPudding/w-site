@@ -24,6 +24,70 @@
 
 $Montserrat-Light: Montserrat-Light;
 
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("../fonts/Raleway/Raleway-SemiBold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Raleway/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Raleway/Raleway-SemiBold.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/Raleway/Raleway-SemiBold.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/Raleway/Raleway-SemiBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("../fonts/Raleway/Raleway-Light.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Raleway/Raleway-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Raleway/Raleway-Light.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/Raleway/Raleway-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/Raleway/Raleway-Light.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/Raleway/Raleway-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../fonts/Raleway/Raleway-Medium.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Raleway/Raleway-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Raleway/Raleway-Medium.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/Raleway/Raleway-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/Raleway/Raleway-Medium.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/Raleway/Raleway-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway/Raleway-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Raleway/Raleway-Regular.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/Raleway/Raleway-Regular.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/Raleway/Raleway-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+$raleway-Light: ('Raleway-Light', sans-serif);
+$raleway-Regular: ('Raleway-Regular', sans-serif);
+$raleway-Medium: ('Raleway-Medium', sans-serif);
+$raleway-SemiBold: ('Raleway-SemiBold', sans-serif);
+
+@mixin font_style($font_family, $font_size, $font_weight,
+$line-height, $text_color) {
+  font-family: $font_family;
+  font-size: $font_size;
+  font-weight: $font_weight;
+  line-height: $line-height;
+  color: $text_color;
+}
+
+
+
 body {
   margin: 0;
   padding: 0;
