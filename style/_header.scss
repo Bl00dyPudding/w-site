@@ -19,10 +19,57 @@ header {
   display: flex;
   align-items: center;
   span {
-    @include font_style($raleway-Regular, 34px, normal, 40px, $color_white);
+    @include font_style($raleway-400, 34px, normal, 40px, $color_white);
   }
 }
 
-a {
+.logo_nav nav a{
+  @include font_style($Montserrat-300, 14px, normal, 17px, $color_white);
+}
 
+.logo_nav nav a:not(:nth-last-of-type(-n+2)){
+  margin-right: 25px;
+}
+
+.logo_nav nav a img, .logo_nav nav form{
+  margin-left: 30px;
+}
+
+.logo_nav nav{
+  form {
+    position: relative;
+  }
+  input {
+    height: 42px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    color: $color_white;
+  }
+  input:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid $color_white;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+}
+
+form:before:focus {
+  display: none;
 }

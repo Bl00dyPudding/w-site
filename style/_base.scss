@@ -22,7 +22,7 @@
   font-style: normal;
 }
 
-$Montserrat-Light: Montserrat-Light;
+$Montserrat-300: ('Monserrat-Light', sans-serif);
 
 @font-face {
   font-family: "Raleway-SemiBold";
@@ -72,10 +72,10 @@ $Montserrat-Light: Montserrat-Light;
   font-style: normal;
 }
 
-$raleway-Light: ('Raleway-Light', sans-serif);
-$raleway-Regular: ('Raleway-Regular', sans-serif);
-$raleway-Medium: ('Raleway-Medium', sans-serif);
-$raleway-SemiBold: ('Raleway-SemiBold', sans-serif);
+$raleway-300: ('Raleway-Light', sans-serif);
+$raleway-400: ('Raleway-Regular', sans-serif);
+$raleway-500: ('Raleway-Medium', sans-serif);
+$raleway-600: ('Raleway-SemiBold', sans-serif);
 
 @mixin font_style($font_family, $font_size, $font_weight,
 $line-height, $text_color) {
@@ -85,8 +85,6 @@ $line-height, $text_color) {
   line-height: $line-height;
   color: $text_color;
 }
-
-
 
 body {
   margin: 0;

@@ -450,6 +450,58 @@ header {
   color: #FFFFFF;
 }
 
+.logo_nav nav a {
+  font-family: "Monserrat-Light", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.logo_nav nav a:not(:nth-last-of-type(-n+2)) {
+  margin-right: 25px;
+}
+
+.logo_nav nav a img, .logo_nav nav form {
+  margin-left: 30px;
+}
+
+.logo_nav nav form {
+  position: relative;
+}
+.logo_nav nav input {
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  color: #FFFFFF;
+}
+.logo_nav nav input:focus {
+  width: 300px;
+  z-index: 1;
+  border-bottom: 2px solid #FFFFFF;
+}
+.logo_nav nav button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+form:before:focus {
+  display: none;
+}
+
 .footer {
   width: 100%;
 }
@@ -468,7 +520,7 @@ header {
   width: 195px;
 }
 .footer__content__about-the-project span {
-  font-family: Montserrat-Light;
+  font-family: "Monserrat-Light", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #555555;
@@ -476,7 +528,7 @@ header {
 }
 
 .footer__content__about-the-project__link {
-  font-family: Montserrat-Light;
+  font-family: "Monserrat-Light", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #D1D1D1;
