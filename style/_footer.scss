@@ -19,7 +19,7 @@
   }
 
   span {
-    font-family: $Montserrat-Light;
+    font-family: $Montserrat-300;
     font-size: 14px;
     line-height: 17px;
     color: #555555;
@@ -28,7 +28,7 @@
 }
 
 .footer__content__about-the-project__link {
-  font-family: $Montserrat-Light;
+  font-family: $Montserrat-400;
   font-size: 14px;
   line-height: 17px;
   color: #D1D1D1;
@@ -53,20 +53,22 @@
 .footer__content__news__posts {
   width: 270px;
 
+  h3 {
+    font-family: $raleway-600;
+    color: $color_white;
+  }
+
   time {
-    font-family: $Montserrat-Light;
+    font-family: $Montserrat-300;
     font-size: 12px;
     line-height: 15px;
     color: #363636;
   }
+}
 
-  h4 {
-    font-family: $Montserrat-Light;
-    font-size: 14px;
-    line-height: 17px;
-    color: #555555;
-  }
-  hr {
-    background: #242424;
-  }
+.footer__content__news__posts__text {
+  font-family: $Montserrat-300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
 }

@@ -19,7 +19,7 @@ header {
   display: flex;
   align-items: center;
   span {
-    @include font_style($raleway-Regular, 34px, normal, 40px, $color_white);
+    @include font_style($raleway-400, 34px, normal, 40px, $color_white);
   }
 }
 

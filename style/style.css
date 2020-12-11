@@ -461,73 +461,6 @@ header {
   color: #FFFFFF;
 }
 
-.footer {
-  width: 100%;
-}
-.footer__content {
-  background: #191919;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-
-.footer__content__about-the-project {
-  width: 270px;
-  display: flex;
-  flex-direction: column;
-  margin: 74px 0 0 333px;
-}
-.footer__content__about-the-project img {
-  width: 195px;
-}
-.footer__content__about-the-project span {
-  font-family: Montserrat-Light;
-  font-size: 14px;
-  line-height: 17px;
-  color: #555555;
-  margin-top: 17px;
-}
-
-.footer__content__about-the-project__link {
-  font-family: Montserrat-Light;
-  font-size: 14px;
-  line-height: 17px;
-  color: #D1D1D1;
-  position: relative;
-  margin-top: 18px;
-}
-.footer__content__about-the-project__link::after {
-  content: "";
-  top: 5px;
-  left: 84px;
-  position: absolute;
-  border: 5px solid transparent;
-  border-left-color: #D1D1D1;
-}
-
-.footer__content__news {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer__content__news__posts {
-  width: 270px;
-}
-.footer__content__news__posts time {
-  font-family: Montserrat-Light;
-  font-size: 12px;
-  line-height: 15px;
-  color: #363636;
-}
-.footer__content__news__posts h4 {
-  font-family: Montserrat-Light;
-  font-size: 14px;
-  line-height: 17px;
-  color: #555555;
-}
-.footer__content__news__posts hr {
-  background: #242424;
-}
-
 .main_partners {
   width: 100%;
   max-height: 489px;
@@ -574,7 +507,7 @@ header {
   height: 48px;
   width: 52px;
   flex-shrink: 0;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -606,6 +539,12 @@ header {
   height: 4px;
   border-radius: 2px;
   background-color: #F1EEE9;
+}
+
+.main_services_service:hover {
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 .main_services_service:hover .main_services_service_heading {
@@ -644,6 +583,148 @@ header {
   background-size: cover;
   width: 100%;
   background-position: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  5% {
+    transform: translateY(5px);
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(5px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  35% {
+    transform: translateY(5px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  45% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  55% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(5px);
+  }
+  70% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(5px);
+  }
+  90% {
+    transform: translateY(0px);
+  }
+  95% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.footer {
+  width: 100%;
+}
+.footer__content {
+  background: #191919;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.footer__content__about-the-project {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  margin: 74px 0 0 333px;
+}
+.footer__content__about-the-project img {
+  width: 195px;
+}
+.footer__content__about-the-project span {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  margin-top: 17px;
+}
+
+.footer__content__about-the-project__link {
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  line-height: 17px;
+  color: #D1D1D1;
+  position: relative;
+  margin-top: 18px;
+}
+.footer__content__about-the-project__link::after {
+  content: "";
+  top: 5px;
+  left: 84px;
+  position: absolute;
+  border: 5px solid transparent;
+  border-left-color: #D1D1D1;
+}
+
+.footer__content__news {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__content__news__posts {
+  width: 270px;
+}
+.footer__content__news__posts h3 {
+  font-family: "Raleway-SemiBold", sans-serif;
+  color: #FFFFFF;
+}
+.footer__content__news__posts time {
+  font-family: Montserrat-Light;
+  font-size: 12px;
+  line-height: 15px;
+  color: #363636;
+}
+
+.footer__content__news__posts__text {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
 }
 
 /*# sourceMappingURL=style.css.map */
