@@ -389,6 +389,7 @@ header {
   width: 270px;
   display: flex;
   flex-direction: column;
+  margin: 74px 0 0 333px;
 }
 .footer__content__about-the-project img {
   width: 195px;
@@ -406,9 +407,40 @@ header {
   font-size: 14px;
   line-height: 17px;
   color: #D1D1D1;
+  position: relative;
+  margin-top: 18px;
 }
-.footer__content__about-the-project__link::before {
+.footer__content__about-the-project__link::after {
   content: "";
+  top: 5px;
+  left: 84px;
+  position: absolute;
+  border: 5px solid transparent;
+  border-left-color: #D1D1D1;
+}
+
+.footer__content__news {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__content__news__posts {
+  width: 270px;
+}
+.footer__content__news__posts time {
+  font-family: Montserrat-Light;
+  font-size: 12px;
+  line-height: 15px;
+  color: #363636;
+}
+.footer__content__news__posts h4 {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+}
+.footer__content__news__posts hr {
+  background: #242424;
 }
 
 /*# sourceMappingURL=style.css.map */
