@@ -22,7 +22,7 @@
 	height: 48px;
 	width: 52px;
 	flex-shrink: 0;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -54,6 +54,12 @@
 	height: 4px;
 	border-radius: 2px;
 	background-color: #F1EEE9;
+}
+
+.main_services_service:hover {
+	animation-name: bounce;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
 
 .main_services_service:hover .main_services_service_heading {
