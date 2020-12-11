@@ -44,12 +44,25 @@ a {
 ::before,
 ::after,
 :active{
+  //так делать хуево так как анимация применяется вообще ко всему в том числе к размерам
   transition: .3s;
 }
+
 
 button,
 button:hover,
 button:active {
   padding: 0 0 0 0;
   outline: none;
+}
+
+h3 {
+  margin: 25px 0;
+  font-family: "Raleway-Regular", sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-family: Montserrat-Light, serif;
+  font-size: 16px;
 }
