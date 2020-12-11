@@ -664,17 +664,17 @@ header {
 .footer__content {
   background: #191919;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 3fr 7fr;
 }
 
 .footer__content__about-the-project {
-  width: 270px;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  margin: 74px 0 0 333px;
+  margin: 74px 0 20px 50%;
 }
 .footer__content__about-the-project img {
-  width: 195px;
+  width: 100%;
 }
 .footer__content__about-the-project span {
   font-family: Montserrat-Light;
@@ -691,6 +691,8 @@ header {
   color: #D1D1D1;
   position: relative;
   margin-top: 18px;
+  width: 90px;
+  padding-bottom: 2px;
 }
 .footer__content__about-the-project__link::after {
   content: "";
@@ -700,18 +702,39 @@ header {
   border: 5px solid transparent;
   border-left-color: #D1D1D1;
 }
+.footer__content__about-the-project__link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #D1D1D1;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.footer__content__about-the-project__link:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 
 .footer__content__news {
   display: flex;
   flex-direction: row;
+  margin: 0 5% 0 5%;
 }
 
 .footer__content__news__posts {
-  width: 270px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 107px 5% 20px 0;
 }
-.footer__content__news__posts h3 {
+.footer__content__news__posts__title {
   font-family: "Raleway-SemiBold", sans-serif;
   color: #FFFFFF;
+  font-size: 24px;
 }
 .footer__content__news__posts time {
   font-family: Montserrat-Light;
@@ -720,11 +743,116 @@ header {
   color: #363636;
 }
 
+.footer__content__news__posts__item {
+  border-bottom: 1px solid #242424;
+  margin-top: 12px;
+}
+.footer__content__news__posts__item:last-child {
+  border-bottom: none;
+}
+.footer__content__news__posts__item:hover time {
+  color: #FFFFFF;
+}
+.footer__content__news__posts__item:hover .footer__content__news__posts__text {
+  color: #C7B299;
+}
+
 .footer__content__news__posts__text {
   font-family: Montserrat-Light;
   font-size: 14px;
   line-height: 17px;
   color: #555555;
+  margin: 8px 0 16px 0;
+}
+
+.footer__content__news__twitter {
+  width: 20%;
+  margin: 108px 5% 20px 0;
+}
+.footer__content__news__twitter__title {
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.footer__content__news__twitter a {
+  color: #00BFF3;
+}
+
+.footer__content__news__twitter__item {
+  border-bottom: 1px solid #242424;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__content__news__twitter__item:last-child {
+  border-bottom: none;
+}
+.footer__content__news__twitter__item span {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  color: #555555;
+}
+.footer__content__news__twitter__item time {
+  margin: 6px 0 16px 0;
+  font-family: Montserrat-Light;
+  color: #363636;
+  font-size: 12px;
+}
+
+.footer__content__news__twitter__item:hover {
+  cursor: pointer;
+}
+.footer__content__news__twitter__item:hover time {
+  color: #FFFFFF;
+}
+.footer__content__news__twitter__item:hover span {
+  color: #C7B299;
+}
+
+.footer__content__news__widget {
+  width: 25%;
+  margin: 108px 0 20px 0;
+}
+.footer__content__news__widget__title {
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.footer__content__news__widget_img {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__content__news__widget_img img:hover {
+  filter: opacity(25%);
+}
+
+.footer__copyright {
+  background: #101010;
+  width: 100%;
+}
+.footer__copyright ul {
+  list-style-type: none;
+  display: flex;
+  width: 50%;
+  margin: 0;
+  padding: 58px 0 41px 15%;
+}
+.footer__copyright ul li {
+  font-family: Montserrat-Light;
+  font-size: 13px;
+  color: #555555;
+  border-right: 1px solid #1A1A1A;
+  padding: 0 13px 0 11px;
+}
+.footer__copyright ul li a {
+  font-family: Montserrat-Light;
+  font-size: 13px;
+  color: #555555;
+}
+.footer__copyright ul li a:hover {
+  color: #BAA78F;
 }
 
 /*# sourceMappingURL=style.css.map */
