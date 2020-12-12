@@ -206,12 +206,14 @@ header {
 }
 
 .header_slogan a{
-  width: 170px;
-  height: 53px;
   background: $color_button;
   border-radius: 3px;
-  font-family: Roboto, sans-serif;
-  color: $color_white;
-  text-align: center;
-  //@include font_style()
+  padding: 19px 40px;
+  margin-top: 39px;
+  @include font_style($roboto-400, 14px, normal, 16px, $color_white)
+}
+
+.header_slogan a:hover {
+  background: $color_dark_button;
+  transition: 0.5s;
 }
