@@ -6,6 +6,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+
 }
 
 .logo_nav {
@@ -36,8 +38,12 @@ header {
   margin-right: 25px;
 }
 
-.logo_nav nav a img{
+.header_nav_cart, nav form{
   margin: 0 30px;
+}
+
+.logo_nav nav a img{
+  display: block;
 }
 
 .logo_nav nav {
@@ -103,11 +109,19 @@ header {
   transform: translateY(4px);
 }
 
+.header_slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 83.6%;
+  margin: 17.2% 8.4%;
+}
+
 //styles for arrows
 .header_slider_left_arrow, .header_slider_right_arrow {
   cursor: pointer;
-  height: 73px;
-  width: 40px;
+  height: 90px;
+  width: 50px;
   position: relative;
   background: transparent;
   border: none;
@@ -119,15 +133,15 @@ header {
   position: absolute;
   width: 54px;
   border-radius: 3px;
-  left: -7px;
+  left: -2px;
 }
 
 .arrow-top {
-  top: 16px;
+  top: 23px;
 }
 
 .arrow-bottom {
-  top: 52px
+  top: 59px
 }
 
 .header_slider_left_arrow{
@@ -214,6 +228,58 @@ header {
 }
 
 .header_slogan a:hover {
-  background: $color_dark_button;
+  background: $color_med_button;
   transition: 0.5s;
+}
+
+.header_slogan a:not(:hover) {
+  transition: 0.5s;
+}
+
+.header_slogan a:active {
+  background: $color_dark_button;
+}
+
+.slider_buttons {
+  display: flex;
+  margin-bottom: 49px;
+}
+
+.header_circle_button {
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider_buttons button {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  border: none;
+  color: $color_white;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.header_circle_button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.slider_buttons button:hover {
+  opacity: 80%;
+  transition: 0.5s;
+}
+
+.slider_buttons button:not(:hover) {
+  transition: 0.5s;
+}
+
+.slider_buttons button:focus {
+  height: 15px;
+  width: 15px;
+  background: transparent;
+  border: 1px solid #D3C1AD;
 }
