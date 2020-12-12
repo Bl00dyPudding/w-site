@@ -21,3 +21,35 @@
 	opacity: .75;
 	transition: .3s
 }
+
+@media screen and (max-width: 1440px) {
+	.main_partners {
+		min-height: 389px;
+		justify-content: space-around;
+	}
+	.main_partners__link {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main_partners {
+		min-height: 289px;
+	}
+	.main_partners__link {
+		margin: 0;
+	}
+	.main_partners__partner-img {
+		width: 140px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.main_partners {
+		min-height: 200px;
+	}
+	.main_partners__partner-img {
+		width: 18vw;
+	}
+}
