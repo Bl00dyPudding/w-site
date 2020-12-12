@@ -337,99 +337,6 @@ template {
   display: none;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes bounce {
-  0% {
-    transform: translateY(0px);
-  }
-  5% {
-    transform: translateY(5px);
-  }
-  10% {
-    transform: translateY(0px);
-  }
-  15% {
-    transform: translateY(5px);
-  }
-  20% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(5px);
-  }
-  30% {
-    transform: translateY(0px);
-  }
-  35% {
-    transform: translateY(5px);
-  }
-  40% {
-    transform: translateY(0px);
-  }
-  45% {
-    transform: translateY(5px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  55% {
-    transform: translateY(5px);
-  }
-  60% {
-    transform: translateY(0px);
-  }
-  65% {
-    transform: translateY(5px);
-  }
-  70% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(5px);
-  }
-  80% {
-    transform: translateY(0px);
-  }
-  85% {
-    transform: translateY(5px);
-  }
-  90% {
-    transform: translateY(0px);
-  }
-  95% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-@keyframes updown {
-  50% {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-  100% {
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
-  }
-}
-@keyframes down {
-  50% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
-  }
-}
 @font-face {
   font-family: "Montserrat-Light";
   src: url("../fonts/Montserrat/Montserrat-Light.eot");
@@ -484,23 +391,23 @@ template {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("../fonts/Roboto/Roboto-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.otf") format("opentype"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 .container {
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
+*,
 button,
 button:hover,
 button:active {
@@ -509,9 +416,9 @@ button:active {
 }
 
 h3 {
-  margin: 25px 0;
   font-family: "Raleway-Regular", sans-serif;
   font-weight: lighter;
+  margin: 25px 0;
 }
 
 p {
@@ -519,27 +426,21 @@ p {
   font-size: 16px;
 }
 
-a:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #433a34;
-}
-
 header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-height: 1024px;
   background-image: url("../style_images/bg_header.jpg");
   background-repeat: no-repeat;
-  background-position-x: center;
-  max-height: 1024px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .logo_nav {
-  width: 100%;
-  margin: 39px 16.8% 0;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 39px 322px 0;
 }
 
 .logo a {
@@ -551,210 +452,7 @@ header {
   font-size: 34px;
   font-weight: normal;
   line-height: 40px;
-  color: #FFFFFF;
-}
-
-.logo_nav nav {
-  display: flex;
-}
-
-.logo_nav nav a {
-  font-family: "Monserrat-Light", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 17px;
-  color: #FFFFFF;
-}
-
-.logo_nav nav a:not(:last-child) {
-  margin-right: 25px;
-}
-
-.logo_nav nav a img {
-  margin: 0 30px;
-}
-
-.logo_nav nav form {
-  position: relative;
-}
-.logo_nav nav input {
-  height: 42px;
-  width: 0;
-  padding: 3px 20px;
-  border: none;
-  border-bottom: 2px solid transparent;
-  outline: none;
-  background: transparent;
-  transition: 0.6s cubic-bezier(0, 0.8, 0, 1);
-  position: absolute;
-  top: -15px;
-  right: 0;
-  z-index: 2;
-  color: black;
-  font-family: "Monserrat-Light", sans-serif;
-  font-size: 14px;
-}
-.logo_nav nav input:focus {
-  width: 700px;
-  background-color: white;
-  z-index: 1;
-}
-.logo_nav nav button {
-  background: transparent;
-  border: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-}
-
-.search {
-  display: block;
-}
-
-.logo_nav nav a:hover {
-  color: #C7B299;
-}
-
-.logo_nav nav a:active {
-  color: #7a6e5f;
-}
-
-.logo_nav nav img:hover, .search:hover {
-  -webkit-animation: updown 0.5s ease;
-  animation: updown 0.5s ease;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-.logo_nav nav a img:active {
-  animation: none;
-  transform: translateY(4px);
-}
-
-.header_slider_left_arrow, .header_slider_right_arrow {
-  cursor: pointer;
-  height: 73px;
-  width: 40px;
-  position: relative;
-  background: transparent;
-  border: none;
-}
-
-.arrow-top, .arrow-bottom {
-  background: #D3C1AC;
-  height: 4px;
-  position: absolute;
-  width: 54px;
-  border-radius: 3px;
-  left: -7px;
-}
-
-.arrow-top {
-  top: 16px;
-}
-
-.arrow-bottom {
-  top: 52px;
-}
-
-.header_slider_left_arrow .arrow-top {
-  transform: rotate(135deg);
-}
-.header_slider_left_arrow .arrow-bottom {
-  transform: rotate(45deg);
-}
-
-.header_slider_right_arrow .arrow-top {
-  transform: rotate(45deg);
-}
-.header_slider_right_arrow .arrow-bottom {
-  transform: rotate(135deg);
-}
-
-.arrow-top::after,
-.arrow-bottom::after {
-  background: #7a6e5f;
-  content: "";
-  height: 100%;
-  position: absolute;
-  transition: all 0.15s;
-}
-
-.arrow-top::after {
-  left: 0;
-  right: 100%;
-  transition-delay: 0.15s;
-}
-
-.arrow-bottom::after {
-  right: 100%;
-  left: 0;
-  transition-delay: 0s;
-}
-
-.header_slider_left_arrow:hover .arrow-top::after, .header_slider_right_arrow:hover .arrow-top::after {
-  right: 0;
-  transition-delay: 0s;
-}
-
-.header_slider_left_arrow:hover .arrow-bottom::after, .header_slider_right_arrow:hover .arrow-bottom::after {
-  right: 0;
-  transition-delay: 0.15s;
-}
-
-.header_slider_right_arrow:active, .header_slider_left_arrow:active {
-  opacity: 70%;
-}
-
-.header_slogan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 569px;
-  flex-wrap: wrap;
-}
-
-.header_slogan span:first-child {
-  font-family: "Raleway-Medium", sans-serif;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 42px;
-  color: #FFFFFF;
-}
-
-.header_slogan span:nth-child(2) {
-  font-family: "Raleway-SemiBold", sans-serif;
-  font-size: 52px;
-  font-weight: normal;
-  line-height: 61px;
-  color: #FFFFFF;
-}
-
-.header_slogan span:nth-child(3) {
-  font-family: "Monserrat-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.header_slogan a {
-  background: #988574;
-  border-radius: 3px;
-  padding: 19px 40px;
-  margin-top: 39px;
-  font-family: "Roboto-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 16px;
-  color: #FFFFFF;
-}
-
-.header_slogan a:hover {
-  background: #473e35;
-  transition: 0.5s;
+  color: #ffffff;
 }
 
 .main_partners {
@@ -918,6 +616,79 @@ header {
   background-size: cover;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  5% {
+    transform: translateY(5px);
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(5px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  35% {
+    transform: translateY(5px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  45% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  55% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(5px);
+  }
+  70% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(5px);
+  }
+  90% {
+    transform: translateY(0px);
+  }
+  95% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .footer {
   width: 100%;
 }
@@ -937,7 +708,7 @@ header {
   width: 100%;
 }
 .footer__content__about-the-project span {
-  font-family: "Monserrat-Light", sans-serif;
+  font-family: Montserrat-Light;
   font-size: 14px;
   line-height: 17px;
   margin-top: 17px;
@@ -945,7 +716,7 @@ header {
 }
 
 .footer__content__about-the-project__link {
-  font-family: "Monserrat-Regular", sans-serif;
+  font-family: Montserrat-Regular;
   font-size: 14px;
   line-height: 17px;
   position: relative;
@@ -994,10 +765,10 @@ header {
 .footer__content__news__posts__title {
   font-family: "Raleway-SemiBold", sans-serif;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer__content__news__posts time {
-  font-family: "Monserrat-Light", sans-serif;
+  font-family: Montserrat-Light;
   font-size: 12px;
   line-height: 15px;
   color: #363636;
@@ -1011,14 +782,14 @@ header {
   border-bottom: none;
 }
 .footer__content__news__posts__item:hover time {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer__content__news__posts__item:hover .footer__content__news__posts__text {
   color: #c7b299;
 }
 
 .footer__content__news__posts__text {
-  font-family: "Monserrat-Light", sans-serif;
+  font-family: Montserrat-Light;
   font-size: 14px;
   line-height: 17px;
   margin: 8px 0 16px 0;
@@ -1032,7 +803,7 @@ header {
 .footer__content__news__twitter__title {
   font-family: "Raleway-SemiBold", sans-serif;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer__content__news__twitter a {
   color: #00bff3;
@@ -1048,12 +819,12 @@ header {
   border-bottom: none;
 }
 .footer__content__news__twitter__item span {
-  font-family: "Monserrat-Light", sans-serif;
+  font-family: Montserrat-Light;
   font-size: 14px;
   color: #555555;
 }
 .footer__content__news__twitter__item time {
-  font-family: "Monserrat-Light", sans-serif;
+  font-family: Montserrat-Light;
   font-size: 12px;
   margin: 6px 0 16px 0;
   color: #363636;
@@ -1063,7 +834,7 @@ header {
   cursor: pointer;
 }
 .footer__content__news__twitter__item:hover time {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer__content__news__twitter__item:hover span {
   color: #c7b299;
@@ -1076,7 +847,7 @@ header {
 .footer__content__news__widget__title {
   font-family: "Raleway-SemiBold", sans-serif;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__content__news__widget_img {
@@ -1100,14 +871,14 @@ header {
   list-style-type: none;
 }
 .footer__copyright ul li {
-  font-family: "Monserrat-Light", sans-serif;
+  font-family: Montserrat-Light;
   font-size: 13px;
   padding: 0 13px 0 11px;
   color: #555555;
   border-right: 1px solid #1a1a1a;
 }
 .footer__copyright ul li a {
-  font-family: "Monserrat-Light", sans-serif;
+  font-family: Montserrat-Light;
   font-size: 13px;
   color: #555555;
 }
