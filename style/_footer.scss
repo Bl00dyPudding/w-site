@@ -225,7 +225,7 @@
     li {
       font-family: $Montserrat-300;
       font-size: 13px;
-      padding: 0 13px 0 11px;
+      padding: 5px 13px 5px 11px;
       color: #555555;
       border-right: 1px solid #1a1a1a;
 
@@ -311,7 +311,9 @@
   }
 
   .footer__copyright ul {
-    width: 100%;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 10px 5%;
   }
 }
