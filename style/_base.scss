@@ -89,14 +89,14 @@ $line-height, $text_color) {
 
 
 body {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 .container {
-	margin: 0 auto;
 	max-width: 1920px;
+	margin: 0 auto;
 }
 
 a {
@@ -121,9 +121,9 @@ button:active {
 }
 
 h3 {
-	margin: 25px 0;
 	font-family: "Raleway-Regular", sans-serif;
 	font-weight: lighter;
+	margin: 25px 0;
 }
 
 p {

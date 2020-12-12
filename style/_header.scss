@@ -1,18 +1,18 @@
 header {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-height: 1024px;
 	background-image: url("../style_images/bg_header.jpg");
 	background-repeat: no-repeat;
-	max-height: 1024px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .logo_nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	width: 100%;
 	margin: 39px 322px 0;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 }
 
 .logo a {

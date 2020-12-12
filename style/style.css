@@ -44,12 +44,12 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
+  overflow: visible;
+  /* 2 */
   box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
-  overflow: visible;
-  /* 2 */
 }
 
 /**
@@ -77,12 +77,12 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
   text-decoration: underline;
   /* 2 */
   text-decoration: underline dotted;
   /* 2 */
+  border-bottom: none;
+  /* 1 */
 }
 
 /**
@@ -200,8 +200,8 @@ button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner {
-  border-style: none;
   padding: 0;
+  border-style: none;
 }
 
 /**
@@ -228,11 +228,9 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
   display: table;
+  /* 1 */
+  box-sizing: border-box;
   /* 1 */
   max-width: 100%;
   /* 1 */
@@ -240,6 +238,8 @@ legend {
   /* 3 */
   white-space: normal;
   /* 1 */
+  color: inherit;
+  /* 2 */
 }
 
 /**
@@ -281,10 +281,10 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
   outline-offset: -2px;
   /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
 }
 
 /**
@@ -299,10 +299,10 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
   font: inherit;
   /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
 }
 
 /* Interactive
@@ -392,14 +392,14 @@ template {
   font-style: normal;
 }
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .container {
-  margin: 0 auto;
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 a {
@@ -422,9 +422,9 @@ button:active {
 }
 
 h3 {
-  margin: 25px 0;
   font-family: "Raleway-Regular", sans-serif;
   font-weight: lighter;
+  margin: 25px 0;
 }
 
 p {
@@ -433,20 +433,20 @@ p {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-height: 1024px;
   background-image: url("../style_images/bg_header.jpg");
   background-repeat: no-repeat;
-  max-height: 1024px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .logo_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
   margin: 39px 322px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .logo a {
@@ -462,13 +462,13 @@ header {
 }
 
 .main_partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-height: 489px;
   background-image: url("../style_images/bg_partners.png");
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main_partners__link:hover {
@@ -485,31 +485,31 @@ header {
 
 .main_services {
   display: flex;
-  min-height: 380px;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  min-height: 380px;
   background-color: #ffffff;
 }
 
 .main_services_service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   width: 270px;
   height: 200px;
   margin: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
 .main_services_service_logo {
-  height: 48px;
-  width: 52px;
   flex-shrink: 0;
-  background-size: contain;
-  background-position: center;
+  width: 52px;
+  height: 48px;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .logo_pencil {
@@ -529,9 +529,9 @@ header {
 }
 
 .main_services_service_text {
+  font-size: 14px;
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 14px;
 }
 
 .main_services_service_underline {
@@ -577,12 +577,12 @@ header {
 }
 
 .main_realization_img {
-  background-image: url("../style_images/realization.svg");
-  height: 483px;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
+  height: 483px;
+  background-image: url("../style_images/realization.svg");
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 @keyframes rotate {
@@ -662,15 +662,15 @@ header {
   width: 100%;
 }
 .footer__content {
-  background: #191919;
   display: grid;
+  background: #191919;
   grid-template-columns: 3fr 7fr;
 }
 
 .footer__content__about-the-project {
-  width: 50%;
   display: flex;
   flex-direction: column;
+  width: 50%;
   margin: 74px 0 20px 50%;
 }
 .footer__content__about-the-project img {
@@ -680,39 +680,39 @@ header {
   font-family: Montserrat-Light;
   font-size: 14px;
   line-height: 17px;
-  color: #555555;
   margin-top: 17px;
+  color: #555555;
 }
 
 .footer__content__about-the-project__link {
   font-family: Montserrat-Regular;
   font-size: 14px;
   line-height: 17px;
-  color: #d1d1d1;
   position: relative;
-  margin-top: 18px;
   width: 90px;
+  margin-top: 18px;
   padding-bottom: 2px;
+  color: #d1d1d1;
 }
 .footer__content__about-the-project__link::after {
-  content: "";
+  position: absolute;
   top: 5px;
   left: 84px;
-  position: absolute;
+  content: "";
   border: 5px solid transparent;
   border-left-color: #d1d1d1;
 }
 .footer__content__about-the-project__link:before {
-  content: "";
   position: absolute;
-  width: 100%;
-  height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #d1d1d1;
   visibility: hidden;
-  transform: scaleX(0);
+  width: 100%;
+  height: 1px;
+  content: "";
   transition: all 0.3s ease-in-out 0s;
+  transform: scaleX(0);
+  background-color: #d1d1d1;
 }
 .footer__content__about-the-project__link:hover:before {
   visibility: visible;
@@ -726,15 +726,15 @@ header {
 }
 
 .footer__content__news__posts {
-  width: 20%;
   display: flex;
   flex-direction: column;
+  width: 20%;
   margin: 107px 5% 20px 0;
 }
 .footer__content__news__posts__title {
   font-family: "Raleway-SemiBold", sans-serif;
-  color: #ffffff;
   font-size: 24px;
+  color: #ffffff;
 }
 .footer__content__news__posts time {
   font-family: Montserrat-Light;
@@ -744,8 +744,8 @@ header {
 }
 
 .footer__content__news__posts__item {
-  border-bottom: 1px solid #242424;
   margin-top: 12px;
+  border-bottom: 1px solid #242424;
 }
 .footer__content__news__posts__item:last-child {
   border-bottom: none;
@@ -761,8 +761,8 @@ header {
   font-family: Montserrat-Light;
   font-size: 14px;
   line-height: 17px;
-  color: #555555;
   margin: 8px 0 16px 0;
+  color: #555555;
 }
 
 .footer__content__news__twitter {
@@ -779,10 +779,10 @@ header {
 }
 
 .footer__content__news__twitter__item {
-  border-bottom: 1px solid #242424;
-  margin-top: 12px;
   display: flex;
   flex-direction: column;
+  margin-top: 12px;
+  border-bottom: 1px solid #242424;
 }
 .footer__content__news__twitter__item:last-child {
   border-bottom: none;
@@ -793,10 +793,10 @@ header {
   color: #555555;
 }
 .footer__content__news__twitter__item time {
-  margin: 6px 0 16px 0;
   font-family: Montserrat-Light;
-  color: #363636;
   font-size: 12px;
+  margin: 6px 0 16px 0;
+  color: #363636;
 }
 
 .footer__content__news__twitter__item:hover {
@@ -820,31 +820,31 @@ header {
 }
 
 .footer__content__news__widget_img {
-  margin-top: 23px;
   display: flex;
   flex-direction: column;
+  margin-top: 23px;
 }
 .footer__content__news__widget_img img:hover {
   filter: opacity(25%);
 }
 
 .footer__copyright {
-  background: #101010;
   width: 100%;
+  background: #101010;
 }
 .footer__copyright ul {
-  list-style-type: none;
   display: flex;
   width: 50%;
   margin: 0;
   padding: 58px 0 41px 15%;
+  list-style-type: none;
 }
 .footer__copyright ul li {
   font-family: Montserrat-Light;
   font-size: 13px;
+  padding: 0 13px 0 11px;
   color: #555555;
   border-right: 1px solid #1a1a1a;
-  padding: 0 13px 0 11px;
 }
 .footer__copyright ul li a {
   font-family: Montserrat-Light;

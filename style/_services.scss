@@ -1,30 +1,30 @@
 .main_services {
 	display: flex;
-	min-height: 380px;
 	align-items: center;
-	justify-content: center;
 	flex-wrap: wrap;
+	justify-content: center;
+	min-height: 380px;
 	background-color: #ffffff;
 }
 
 .main_services_service {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 	width: 270px;
 	height: 200px;
 	margin: 15px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
 	text-align: center;
 }
 
 .main_services_service_logo {
-	height: 48px;
-	width: 52px;
 	flex-shrink: 0;
-	background-size: contain;
-	background-position: center;
+	width: 52px;
+	height: 48px;
 	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 .logo_pencil {
@@ -44,9 +44,9 @@
 }
 
 .main_services_service_text {
+	font-size: 14px;
 	margin-top: 0;
 	margin-bottom: 20px;
-	font-size: 14px;
 }
 
 .main_services_service_underline {
