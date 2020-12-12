@@ -408,12 +408,6 @@ a {
 }
 
 *,
-::before,
-::after,
-:active {
-  transition: 0.3s;
-}
-
 button,
 button:hover,
 button:active {
@@ -473,6 +467,7 @@ header {
 
 .main_partners__link:hover {
   transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .main_partners__partner-img {
@@ -481,6 +476,7 @@ header {
 
 .main_partners__link:active {
   opacity: 0.75;
+  transition: 0.3s;
 }
 
 .main_services {

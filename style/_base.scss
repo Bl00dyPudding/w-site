@@ -105,14 +105,6 @@ a {
 }
 
 *,
-::before,
-::after,
-:active {
-	//так делать хуево так как анимация применяется вообще ко всему в том числе к размерам
-	transition: .3s;
-}
-
-
 button,
 button:hover,
 button:active {

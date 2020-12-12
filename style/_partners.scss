@@ -10,6 +10,7 @@
 
 .main_partners__link:hover {
 	transform: scale(1.1);
+	transition: .3s
 }
 
 .main_partners__partner-img {
@@ -18,4 +19,5 @@
 
 .main_partners__link:active {
 	opacity: .75;
+	transition: .3s
 }
