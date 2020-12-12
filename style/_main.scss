@@ -1,21 +1,21 @@
 .main_partners {
-  width: 100%;
-  max-height: 489px;
-  background-image: url("../style_images/bg_partners.png");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	max-height: 489px;
+	background-image: url("../style_images/bg_partners.png");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .main_partners__link:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .main_partners__partner-img {
-  padding: 0 75px 0 75px;
+	padding: 0 75px 0 75px;
 }
 
 .main_partners__link:active {
-  opacity: .75;
+	opacity: .75;
 }

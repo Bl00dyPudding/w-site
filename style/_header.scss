@@ -1,26 +1,27 @@
 header {
-  background-image: url("../style_images/bg_header.jpg");
-  background-repeat: no-repeat;
-  max-height: 1024px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	background-image: url("../style_images/bg_header.jpg");
+	background-repeat: no-repeat;
+	max-height: 1024px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .logo_nav {
-  width: 100%;
-  margin: 39px 322px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	width: 100%;
+	margin: 39px 322px 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.logo a{
-  display: flex;
-  align-items: center;
-  span {
-    @include font_style($raleway-400, 34px, normal, 40px, $color_white);
-  }
+.logo a {
+	display: flex;
+	align-items: center;
+
+	span {
+		@include font_style($raleway-400, 34px, normal, 40px, $color_white);
+	}
 }
 
 a {
