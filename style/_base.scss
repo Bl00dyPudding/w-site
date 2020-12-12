@@ -23,6 +23,7 @@
 }
 
 $Montserrat-300: ('Monserrat-Light', sans-serif);
+$Montserrat-400: ('Monserrat-Regular', sans-serif);
 
 @font-face {
   font-family: "Raleway-SemiBold";
@@ -88,7 +89,6 @@ $line-height, $text_color) {
 
 body {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -99,17 +99,7 @@ body {
 
 a {
   text-decoration: none;
-  outline:none;
 }
-
-*,
-::before,
-::after,
-:active{
-  //так делать хуево так как анимация применяется вообще ко всему в том числе к размерам
-  transition: .3s;
-}
-
 
 button,
 button:hover,

@@ -103,11 +103,14 @@ header {
   transform: translateY(4px);
 }
 
+//styles for arrows
 .header_slider_left_arrow, .header_slider_right_arrow {
   cursor: pointer;
   height: 73px;
   width: 40px;
   position: relative;
+  background: transparent;
+  border: none;
 }
 
 .arrow-top, .arrow-bottom {
@@ -178,4 +181,37 @@ header {
 
 .header_slider_right_arrow:active, .header_slider_left_arrow:active {
   opacity: 70%;
+}
+//end of arrows styles
+
+.header_slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 569px;
+  flex-wrap: wrap;
+}
+
+.header_slogan span:first-child {
+  @include font_style($raleway-500, 36px, normal, 42px, $color_white);
+}
+
+.header_slogan span:nth-child(2) {
+  @include font_style($raleway-600, 52px, normal, 61px, $color_white);
+}
+
+.header_slogan span:nth-child(3) {
+  @include font_style($Montserrat-400, 16px, normal, 20px, $color_white);
+  text-align: center;
+}
+
+.header_slogan a{
+  width: 170px;
+  height: 53px;
+  background: $color_button;
+  border-radius: 3px;
+  font-family: Roboto, sans-serif;
+  color: $color_white;
+  text-align: center;
+  //@include font_style()
 }
