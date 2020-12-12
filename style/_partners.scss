@@ -35,6 +35,8 @@
 @media screen and (max-width: 768px) {
 	.main_partners {
 		min-height: 289px;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.main_partners__link {
 		margin: 0;
