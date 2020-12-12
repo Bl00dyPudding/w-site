@@ -1,5 +1,219 @@
 header {
   background-image: url("../style_images/bg_header.jpg");
   background-repeat: no-repeat;
+  background-position-x: center;
   max-height: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_nav {
+  width: 100%;
+  margin: 39px 16.8% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
+  span {
+    @include font_style($raleway-400, 34px, normal, 40px, $color_white);
+  }
+}
+
+.logo_nav nav{
+  display: flex;
+}
+
+.logo_nav nav a{
+  @include font_style($Montserrat-300, 14px, normal, 17px, $color_white);
+}
+
+.logo_nav nav a:not(:last-child){
+  margin-right: 25px;
+}
+
+.logo_nav nav a img{
+  margin: 0 30px;
+}
+
+.logo_nav nav {
+  form {
+    position: relative;
+  }
+
+  input {
+    height: 42px;
+    width: 0;
+    padding: 3px 20px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: 0.6s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: 2;
+    color: black;
+    font-family: $Montserrat-300;
+    font-size: 14px;
+  }
+
+  input:focus {
+    width: 700px;
+    background-color: white;
+    z-index: 1;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+}
+
+.search {
+  display: block;
+}
+
+.logo_nav nav a:hover {
+  color: #C7B299;
+}
+
+.logo_nav nav a:active {
+  color: #7a6e5f;
+}
+
+.logo_nav nav img:hover, .search:hover{
+  -webkit-animation: updown 0.5s ease;
+  animation: updown 0.5s ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.logo_nav nav a img:active {
+  animation: none;
+  transform: translateY(4px);
+}
+
+//styles for arrows
+.header_slider_left_arrow, .header_slider_right_arrow {
+  cursor: pointer;
+  height: 73px;
+  width: 40px;
+  position: relative;
+  background: transparent;
+  border: none;
+}
+
+.arrow-top, .arrow-bottom {
+  background: #D3C1AC;
+  height: 4px;
+  position: absolute;
+  width: 54px;
+  border-radius: 3px;
+  left: -7px;
+}
+
+.arrow-top {
+  top: 16px;
+}
+
+.arrow-bottom {
+  top: 52px
+}
+
+.header_slider_left_arrow{
+  .arrow-top {
+    transform: rotate(135deg);
+  }
+
+  .arrow-bottom {
+    transform: rotate(45deg);
+  }
+}
+
+.header_slider_right_arrow {
+  .arrow-top {
+    transform: rotate(45deg);
+  }
+
+  .arrow-bottom {
+    transform: rotate(135deg);
+  }
+}
+
+.arrow-top::after,
+.arrow-bottom::after {
+  background: #7a6e5f;
+  content: '';
+  height: 100%;
+  position: absolute;
+  transition: all 0.15s;
+}
+.arrow-top::after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+.arrow-bottom::after {
+  right: 100%;
+  left: 0;
+  transition-delay: 0s;
+}
+
+.header_slider_left_arrow:hover .arrow-top::after, .header_slider_right_arrow:hover .arrow-top::after {
+  right: 0;
+  transition-delay: 0s;
+}
+
+.header_slider_left_arrow:hover .arrow-bottom::after, .header_slider_right_arrow:hover .arrow-bottom::after  {
+  right: 0;
+  transition-delay: 0.15s;
+}
+
+.header_slider_right_arrow:active, .header_slider_left_arrow:active {
+  opacity: 70%;
+}
+//end of arrows styles
+
+.header_slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 569px;
+  flex-wrap: wrap;
+}
+
+.header_slogan span:first-child {
+  @include font_style($raleway-500, 36px, normal, 42px, $color_white);
+}
+
+.header_slogan span:nth-child(2) {
+  @include font_style($raleway-600, 52px, normal, 61px, $color_white);
+}
+
+.header_slogan span:nth-child(3) {
+  @include font_style($Montserrat-400, 16px, normal, 20px, $color_white);
+  text-align: center;
+}
+
+.header_slogan a{
+  background: $color_button;
+  border-radius: 3px;
+  padding: 19px 40px;
+  margin-top: 39px;
+  @include font_style($roboto-400, 14px, normal, 16px, $color_white)
+}
+
+.header_slogan a:hover {
+  background: $color_dark_button;
+  transition: 0.5s;
 }
