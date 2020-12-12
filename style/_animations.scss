@@ -93,3 +93,27 @@
 		transform: translateY(0px);
 	}
 }
+
+@keyframes updown {
+	50% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+
+	100% {
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+	}
+}
+
+@keyframes down {
+	50% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	100% {
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+	}
+}
