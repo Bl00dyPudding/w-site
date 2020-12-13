@@ -230,16 +230,16 @@ header {
   @include font_style($roboto-400, 14px, $line-height, $color_white)
 }
 
-.header_slogan a:hover {
+.button_brown:hover {
   background: $color_med_button;
   transition: 0.5s;
 }
 
-.header_slogan a:not(:hover) {
+.button_brown:not(:hover) {
   transition: 0.5s;
 }
 
-.header_slogan a:active {
+.button_brown:active {
   background: $color_dark_button;
 }
 
