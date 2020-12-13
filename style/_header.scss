@@ -22,7 +22,7 @@ header {
   display: flex;
   align-items: center;
   span {
-    @include font_style($raleway-400, 34px, normal, 40px, $color_white);
+    @include font_style($raleway-400, 34px, $line-height, $color_white);
   }
 }
 
@@ -31,7 +31,7 @@ header {
 }
 
 .logo_nav nav a{
-  @include font_style($Montserrat-300, 14px, normal, 17px, $color_white);
+  @include font_style($Montserrat-300, 14px, $line-height, $color_white);
 }
 
 .logo_nav nav a:not(:last-child){
@@ -114,7 +114,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 83.6%;
-  margin: 17.2% 8.4%;
+  margin: 16.4% 8.4%;
 }
 
 //styles for arrows
@@ -207,24 +207,27 @@ header {
 }
 
 .header_slogan span:first-child {
-  @include font_style($raleway-500, 36px, normal, 42px, $color_white);
+  @include font_style($raleway-500, 36px, $line-height, $color_white);
 }
 
 .header_slogan span:nth-child(2) {
-  @include font_style($raleway-600, 52px, normal, 61px, $color_white);
+  @include font_style($raleway-600, 52px, $line-height, $color_white);
 }
 
 .header_slogan span:nth-child(3) {
-  @include font_style($Montserrat-400, 16px, normal, 20px, $color_white);
+  @include font_style($Montserrat-400, 16px, $line-height, $color_white);
   text-align: center;
 }
 
-.header_slogan a{
-  background: $color_button;
-  border-radius: 3px;
+.get_started_button{
   padding: 19px 40px;
   margin-top: 39px;
-  @include font_style($roboto-400, 14px, normal, 16px, $color_white)
+}
+
+.button_brown {
+  background: $color_button;
+  border-radius: 3px;
+  @include font_style($roboto-400, 14px, $line-height, $color_white)
 }
 
 .header_slogan a:hover {
