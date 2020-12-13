@@ -208,6 +208,7 @@
 	border-radius: 50%;
 	position: relative;
 	margin: 0 18px;
+	transition: 1s ease;
 
 	&::after {
 		content: "";
@@ -219,6 +220,7 @@
 		border-top: 2px solid #d1d1d1;
 		border-right: 2px solid #d1d1d1;
 		transform: rotate(45deg);
+		transition: 1s ease;
 	}
 
 	&:hover {
