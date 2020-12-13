@@ -127,8 +127,7 @@ p {
   font-size: 16px;
 }
 
-a:focus {
+button:focus, a:focus {
   outline: none;
-  box-shadow: 0 0 0 4px #433a34;
-
+  animation: box-shadow 0.45s ease;
 }
