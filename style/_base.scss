@@ -91,12 +91,11 @@ $raleway-600: ('Raleway-SemiBold', sans-serif);
 }
 
 $roboto-400: ('Roboto-Regular', sans-serif);
+$line-height: 1.15;
 
-@mixin font_style($font_family, $font_size, $font_weight,
-$line-height, $text_color) {
+@mixin font_style($font_family, $font_size, $line-height, $text_color) {
   font-family: $font_family;
   font-size: $font_size;
-  font-weight: $font_weight;
   line-height: $line-height;
   color: $text_color;
 }
