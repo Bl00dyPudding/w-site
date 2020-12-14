@@ -116,6 +116,11 @@ button:active {
   outline: none;
 }
 
+h2 {
+  margin: 25px 0;
+  //@include font_style($font-family, )
+}
+
 h3 {
   margin: 25px 0;
   font-family: "Raleway-Regular", sans-serif;
