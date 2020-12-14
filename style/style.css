@@ -545,7 +545,7 @@ header {
 
 .logo_nav {
   width: 100%;
-  margin: 39px 16.8% 0;
+  margin: 39px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -827,6 +827,61 @@ header {
   border: 1px solid #D3C1AD;
 }
 
+@media screen and (max-width: 1024px) {
+  .logo_nav {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 0;
+  }
+
+  .logo {
+    transform: scale(0.8);
+    margin-bottom: 15px;
+  }
+
+  .logo_nav nav form input:focus {
+    width: 660px;
+  }
+
+  .logo_nav nav a:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .header_nav_cart {
+    margin: 0 15px;
+  }
+
+  .logo_nav nav {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  .logo_nav nav form {
+    margin-right: 0;
+  }
+
+  .header_slider_left_arrow, .header_slider_right_arrow {
+    transform: scale(0.8);
+  }
+
+  .header_slider {
+    width: 90%;
+  }
+
+  .header_slogan {
+    max-width: 400px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo_nav {
+    flex-direction: row;
+  }
+
+  .logo a span {
+    display: none;
+  }
+}
 .main_services {
   display: flex;
   align-items: center;
