@@ -971,19 +971,115 @@ header {
 }
 
 .main_realization {
-  margin: 0 auto;
   background-color: #fbfaf8;
 }
 
-.main_realization_img {
-  width: 100%;
-  height: 483px;
-  background-image: url("../style_images/realization.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.main_realization_header {
+  padding-top: 80px;
+  font-family: Raleway-Regular, serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #555555;
+  margin-bottom: 20px;
 }
 
+.main_realization_description {
+  font-family: Montserrat-Regular, serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #8C8C8C;
+  margin-bottom: 42px;
+}
+
+.main_realization_img {
+  width: 80%;
+}
+
+.main_realization_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.main_realization_footer {
+  background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.main_realization_footer_wrap {
+  padding: 45px 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_realization_footer_waxom {
+  font-family: Raleway-Regular, serif;
+  font-size: 28px;
+  line-height: 33px;
+  color: #C7B299;
+}
+
+.main_realization_footer_description {
+  font-family: Raleway-Regular, serif;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+.main_realization_footer_text {
+  font-family: Montserrat-Regular, serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #615855;
+}
+
+.main_realization_footer_button {
+  background: #988574;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: "Monserrat-Light", sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: 0.5s;
+}
+
+.main_realization_footer_button:hover {
+  background: #b9aca0;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .main_realization_img {
+    width: 100%;
+  }
+
+  .main_realization_footer_wrap {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+
+  .main_realization_footer_text,
+.main_realization_footer_description {
+    margin-bottom: 10px;
+  }
+}
 .main__our-projects, .projects-header-block {
   display: flex;
   flex-direction: column;
