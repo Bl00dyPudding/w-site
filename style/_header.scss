@@ -6,6 +6,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+
 }
 
 .logo_nav {
@@ -20,7 +22,7 @@ header {
   display: flex;
   align-items: center;
   span {
-    @include font_style($raleway-400, 34px, normal, 40px, $color_white);
+    @include font_style($raleway-400, 34px, $line-height, $color_white);
   }
 }
 
@@ -29,15 +31,19 @@ header {
 }
 
 .logo_nav nav a{
-  @include font_style($Montserrat-300, 14px, normal, 17px, $color_white);
+  @include font_style($Montserrat-300, 14px, $line-height, $color_white);
 }
 
 .logo_nav nav a:not(:last-child){
   margin-right: 25px;
 }
 
-.logo_nav nav a img{
+.header_nav_cart, nav form{
   margin: 0 30px;
+}
+
+.logo_nav nav a img{
+  display: block;
 }
 
 .logo_nav nav {
@@ -103,11 +109,19 @@ header {
   transform: translateY(4px);
 }
 
+.header_slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 83.6%;
+  margin: 16.4% 8.4%;
+}
+
 //styles for arrows
 .header_slider_left_arrow, .header_slider_right_arrow {
   cursor: pointer;
-  height: 73px;
-  width: 40px;
+  height: 90px;
+  width: 50px;
   position: relative;
   background: transparent;
   border: none;
@@ -119,15 +133,15 @@ header {
   position: absolute;
   width: 54px;
   border-radius: 3px;
-  left: -7px;
+  left: -2px;
 }
 
 .arrow-top {
-  top: 16px;
+  top: 23px;
 }
 
 .arrow-bottom {
-  top: 52px
+  top: 59px
 }
 
 .header_slider_left_arrow{
@@ -193,27 +207,82 @@ header {
 }
 
 .header_slogan span:first-child {
-  @include font_style($raleway-500, 36px, normal, 42px, $color_white);
+  @include font_style($raleway-500, 36px, $line-height, $color_white);
 }
 
 .header_slogan span:nth-child(2) {
-  @include font_style($raleway-600, 52px, normal, 61px, $color_white);
+  @include font_style($raleway-600, 52px, $line-height, $color_white);
 }
 
 .header_slogan span:nth-child(3) {
-  @include font_style($Montserrat-400, 16px, normal, 20px, $color_white);
+  @include font_style($Montserrat-400, 16px, $line-height, $color_white);
   text-align: center;
 }
 
-.header_slogan a{
-  background: $color_button;
-  border-radius: 3px;
+.get_started_button{
   padding: 19px 40px;
   margin-top: 39px;
-  @include font_style($roboto-400, 14px, normal, 16px, $color_white)
 }
 
-.header_slogan a:hover {
-  background: $color_dark_button;
+.button_brown {
+  background: $color_button;
+  border-radius: 3px;
+  @include font_style($roboto-400, 14px, $line-height, $color_white)
+}
+
+.button_brown:hover {
+  background: $color_med_button;
   transition: 0.5s;
+}
+
+.button_brown:not(:hover) {
+  transition: 0.5s;
+}
+
+.button_brown:active {
+  background: $color_dark_button;
+}
+
+.slider_buttons {
+  display: flex;
+  margin-bottom: 49px;
+}
+
+.header_circle_button {
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider_buttons button {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  border: none;
+  color: $color_white;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.header_circle_button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.slider_buttons button:hover {
+  opacity: 80%;
+  transition: 0.5s;
+}
+
+.slider_buttons button:not(:hover) {
+  transition: 0.5s;
+}
+
+.slider_buttons button:focus {
+  height: 15px;
+  width: 15px;
+  background: transparent;
+  border: 1px solid #D3C1AD;
 }
