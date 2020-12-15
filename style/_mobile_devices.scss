@@ -31,19 +31,38 @@
 	font-family: $Montserrat-300;
 	font-size: 16px;
 	color: #8c8c8c;
-	list-style: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 0C4.7 0 0 4.7 0 10.5C0 16.3 4.7 21 10.5 21C16.3 21 21 16.3 21 10.5C21 4.7 16.3 0 10.5 0ZM13.79 11L9.25 15.54C8.98 15.81 8.53 15.81 8.26 15.54C7.99 15.26 7.99 14.82 8.26 14.55L12.31 10.5L8.26 6.45C7.99 6.18 7.99 5.74 8.26 5.46C8.53 5.19 8.98 5.19 9.25 5.46L13.79 10C13.93 10.14 14 10.32 13.99 10.5C13.99 10.68 13.93 10.86 13.79 11Z' fill='%23C7B299'/%3E%3C/svg%3E%0A");
+	list-style: none;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.main_mobile_devices_wrap_text_points::before {
+	width: 21px;
+	height: 21px;
+	content: '';
+	display: block;
+	position: absolute;
+	left: -25px;
+	background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 0C4.7 0 0 4.7 0 10.5C0 16.3 4.7 21 10.5 21C16.3 21 21 16.3 21 10.5C21 4.7 16.3 0 10.5 0ZM13.79 11L9.25 15.54C8.98 15.81 8.53 15.81 8.26 15.54C7.99 15.26 7.99 14.82 8.26 14.55L12.31 10.5L8.26 6.45C7.99 6.18 7.99 5.74 8.26 5.46C8.53 5.19 8.98 5.19 9.25 5.46L13.79 10C13.93 10.14 14 10.32 13.99 10.5C13.99 10.68 13.93 10.86 13.79 11Z' fill='%23C7B299'/%3E%3C/svg%3E%0A");
 }
 
 .main_mobile_devices_wrap_text_points:hover {
-	list-style: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 0C4.7 0 0 4.7 0 10.5C0 16.3 4.7 21 10.5 21C16.3 21 21 16.3 21 10.5C21 4.7 16.3 0 10.5 0ZM13.79 11L9.25 15.54C8.98 15.81 8.53 15.81 8.26 15.54C7.99 15.26 7.99 14.82 8.26 14.55L12.31 10.5L8.26 6.45C7.99 6.18 7.99 5.74 8.26 5.46C8.53 5.19 8.98 5.19 9.25 5.46L13.79 10C13.93 10.14 14 10.32 13.99 10.5C13.99 10.68 13.93 10.86 13.79 11Z' fill='%23988574'/%3E%3C/svg%3E%0A");
 	animation-name: bounce;
 	animation-duration: 5s;
+}
+
+.main_mobile_devices_wrap_text_points:hover::before {
+	background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 0C4.7 0 0 4.7 0 10.5C0 16.3 4.7 21 10.5 21C16.3 21 21 16.3 21 10.5C21 4.7 16.3 0 10.5 0ZM13.79 11L9.25 15.54C8.98 15.81 8.53 15.81 8.26 15.54C7.99 15.26 7.99 14.82 8.26 14.55L12.31 10.5L8.26 6.45C7.99 6.18 7.99 5.74 8.26 5.46C8.53 5.19 8.98 5.19 9.25 5.46L13.79 10C13.93 10.14 14 10.32 13.99 10.5C13.99 10.68 13.93 10.86 13.79 11Z' fill='%23352F2D'/%3E%3C/svg%3E%0A");
 }
 
 @media screen and (max-width: 960px) {
 	.main_mobile_devices_wrap {
 		flex-direction: column;
 		padding-top: 0;
+	}
+
+	.main_mobile_devices_wrap_img {
+		padding-top: 20px;
 	}
 
 	.main_mobile_devices_wrap_text {
