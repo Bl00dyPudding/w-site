@@ -7,7 +7,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .logo_nav {
@@ -15,6 +14,12 @@ header {
   margin: 39px 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.navigation-block {
+  margin-right: 54px;
+  display: flex;
   align-items: center;
 }
 
@@ -287,7 +292,7 @@ header {
   border: 1px solid #D3C1AD;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .logo_nav {
     flex-direction: column;
     justify-content: center;
@@ -316,6 +321,12 @@ header {
     justify-content: space-between;
   }
 
+  .navigation-block {
+    justify-content: space-between;
+    width: 80%;
+    margin-right: 40px;
+  }
+
   .logo_nav nav form {
     margin-right: 0;
   }
@@ -334,14 +345,64 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .logo_nav {
-    flex-direction: row;
+@media screen and (max-width: 767px) {
+  .logo_nav nav a:not(:last-child){
+    margin-right: 10px;
   }
 
-  .logo a span {
+  .logo_nav nav a {
+    font-size: 10px;
+  }
+
+  .navigation-block {
+    margin-right: 25px;
+  }
+
+  .header_slogan {
+    max-width: 300px;
+  }
+
+  .header_slogan span:first-child {
+    font-size: 23px;
+  }
+
+  .header_slogan span:nth-child(2) {
+    font-size: 37px;
+  }
+
+  .header_slogan span:last-child {
+    font-size: 12px;
+  }
+
+  .get_started_button {
+    margin-top: 60px;
+  }
+
+  .logo_nav nav form input:focus {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .logo span, .navigation-block, .header_slider_left_arrow, .header_slider_right_arrow, .slider_buttons {
     display: none;
   }
 
+  .logo_nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
 
+  .logo_nav nav {
+    justify-content: flex-end;
+  }
+
+  .logo_nav nav form input:focus {
+    width: 180px;
+  }
+
+  .header_slider {
+    flex-direction: column;
+  }
 }
