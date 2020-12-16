@@ -403,20 +403,28 @@ header {
 
   .navigation-block {
     display: none;
+    flex-direction: column;
   }
 
   nav .active {
     position: relative;
   }
 
-  .navigation-block .active {
+  .navigation-block-active {
+    display: flex;
     flex-direction: column;
     position: absolute;
     align-items: flex-end;
-    top: 50px;
+    right: -35px;
+    top: 66px;
+    width: 200px;
+    border-radius: 3px;
+    padding: 20px;
+    transform: translateY(10px);
+    transition: 0.5s;
     a {
       margin: 5px 20px 5px 0 !important;
-      font-size: 16px !important;
+      font-size: 23px !important;
     }
   }
 
@@ -438,7 +446,7 @@ header {
     width: 150px;
   }
 
-  .header_slider .active {
+  .header_slider-active {
     flex-direction: column;
   }
 
@@ -446,7 +454,7 @@ header {
     display: flex;
   }
 
-  .hamburger .active {
+  .hamburger-active {
     .active__inner:first-child {
       transform: translateY(10px) rotate(45deg);
       transition: 0.5s;
@@ -462,7 +470,13 @@ header {
     }
   }
 
-  .header_slider .active {
+  .header_slider-active {
     margin-top: 300px;
+    transition: 0.5s;
+  }
+
+  .header_slider {
+    transition: 0.5s;
+    flex-direction: column;
   }
 }

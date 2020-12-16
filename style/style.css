@@ -1007,21 +1007,29 @@ header {
 
   .navigation-block {
     display: none;
+    flex-direction: column;
   }
 
   nav .active {
     position: relative;
   }
 
-  .navigation-block .active {
+  .navigation-block-active {
+    display: flex;
     flex-direction: column;
     position: absolute;
     align-items: flex-end;
-    top: 50px;
+    right: -35px;
+    top: 66px;
+    width: 200px;
+    border-radius: 3px;
+    padding: 20px;
+    transform: translateY(10px);
+    transition: 0.5s;
   }
-  .navigation-block .active a {
+  .navigation-block-active a {
     margin: 5px 20px 5px 0 !important;
-    font-size: 16px !important;
+    font-size: 23px !important;
   }
 
   .logo_nav {
@@ -1042,7 +1050,7 @@ header {
     width: 150px;
   }
 
-  .header_slider .active {
+  .header_slider-active {
     flex-direction: column;
   }
 
@@ -1050,21 +1058,27 @@ header {
     display: flex;
   }
 
-  .hamburger .active .active__inner:first-child {
+  .hamburger-active .active__inner:first-child {
     transform: translateY(10px) rotate(45deg);
     transition: 0.5s;
   }
-  .hamburger .active .active__inner:nth-child(2) {
+  .hamburger-active .active__inner:nth-child(2) {
     transform: scale(0);
     transition: 0.5s;
   }
-  .hamburger .active .active__inner:last-child {
+  .hamburger-active .active__inner:last-child {
     transform: translateY(-10px) rotate(135deg);
     transition: 0.5s;
   }
 
-  .header_slider .active {
+  .header_slider-active {
     margin-top: 300px;
+    transition: 0.5s;
+  }
+
+  .header_slider {
+    transition: 0.5s;
+    flex-direction: column;
   }
 }
 .main_services {
@@ -1868,6 +1882,7 @@ header {
   justify-content: center;
   width: 100%;
   height: 489px;
+  flex-wrap: wrap;
   background-image: url("../style_images/bg_partners.png");
   background-size: cover;
 }
@@ -1878,7 +1893,7 @@ header {
 }
 
 .main_partners__partner-img {
-  padding: 0 75px 0 75px;
+  padding: 0 3.9%;
 }
 
 .main_partners__link:active {
@@ -1912,7 +1927,7 @@ header {
   }
 
   .main_partners__link {
-    margin: 0;
+    margin: 20px 8% 0;
   }
 
   .main_partners__partner-img {
@@ -1920,13 +1935,17 @@ header {
     height: auto;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 479px) {
   .main_partners {
     min-height: 200px;
   }
 
   .main_partners__partner-img {
-    width: 18vw;
+    width: 30vw;
+  }
+
+  .main_partners__link {
+    margin: 15px 8% 0;
   }
 }
 .footer {

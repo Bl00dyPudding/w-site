@@ -15,3 +15,10 @@ function counter (num, selector) {
         if (number === num) clearInterval(interval)
     },10)
 }
+
+function toggleMenu () {
+    document.querySelector('.hamburger').classList.toggle('hamburger-active')
+    document.querySelector('nav').classList.toggle('active')
+    document.querySelector('.navigation-block').classList.toggle('navigation-block-active')
+    document.querySelector('.header_slider').classList.toggle('header_slider-active')
+}
