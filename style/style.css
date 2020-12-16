@@ -509,14 +509,6 @@ template {
     transform: translateX(0px);
   }
 }
-@keyframes hamburger_1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(45deg);
-  }
-}
 @font-face {
   font-family: "Montserrat-Light";
   src: url("../fonts/Montserrat/Montserrat-Light.eot");
