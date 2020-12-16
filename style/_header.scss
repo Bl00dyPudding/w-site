@@ -118,7 +118,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 83.6%;
+  width: 83%;
   margin: 16.4% 8.4%;
 }
 
@@ -333,10 +333,6 @@ header {
 
   .header_slider_left_arrow, .header_slider_right_arrow {
     transform: scale(0.8);
-  }
-
-  .header_slider {
-    width: 90%;
   }
 
   .header_slogan {

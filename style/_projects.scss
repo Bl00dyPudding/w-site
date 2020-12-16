@@ -76,7 +76,6 @@
 
 .projects-content-block {
 	display: flex;
-	min-width: 900px;
 	max-width: 1200px;
 	flex-wrap: wrap;
 	margin-top: 66px;
@@ -111,6 +110,7 @@
 	padding-top: 26px;
 	padding-left: 23px;
 	padding-bottom: 26px;
+	min-height: 70px;
 	position: relative;
 }
 
@@ -163,3 +163,46 @@
 }
 
 //end a projects-load-button styles
+//start a media layout
+
+@media screen and (max-width: 767px) {
+	.projects-menu {
+		flex-wrap: wrap;
+		min-width: 400px;
+		width: 80%;
+		justify-content: space-around;
+	}
+
+	.projects-button-container, .projects-button-container-all {
+		margin-bottom: 10px;
+	}
+
+	.projects-header-block {
+		min-width: 400px;
+		width: 80%;
+	}
+
+	.projects-content-block__content {
+		min-width: 330px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.projects-menu {
+		min-width: 320px;
+	}
+
+	.projects-header-block {
+		min-width: 300px;
+		width: 80%;
+	}
+
+	.projects-content-block__content {
+		min-width: 300px;
+		margin-bottom: 20px;
+	}
+
+	.projects-load {
+		margin-top: 0;
+	}
+}
